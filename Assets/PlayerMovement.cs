@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 7f;
 
+    bool isGrounded = true;
+
     Rigidbody rb;
 
     void Start() {
@@ -20,8 +22,13 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(movement * speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
         }
+    }
+
+    void OnCollisionEnter (Collision collision) {
+        isGrounded = true;
     }
 }
