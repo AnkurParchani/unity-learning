@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    void Start() {
+    void Start()
+    {
         rb = GetComponent<Rigidbody>();
     }
 
@@ -22,13 +23,15 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(movement * speed * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
     }
 
-    void OnCollisionEnter (Collision collision) {
+    void OnCollisionEnter(Collision collision)
+    {
         isGrounded = true;
     }
 }
