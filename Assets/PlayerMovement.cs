@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded = true;
 
     int score = 0;
+    public int totalCoins = 5;
 
     Rigidbody rb;
 
@@ -54,5 +55,10 @@ public class PlayerMovement : MonoBehaviour
     {
         score++;
         scoreText.text = "Score: " + score;
+
+        if (score >= totalCoins)
+        {
+            Debug.Log("You win!");
+        }
     }
 }
