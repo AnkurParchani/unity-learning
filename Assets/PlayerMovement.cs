@@ -1,10 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 7f;
+
+    public TextMeshProUGUI scoreText;
 
     bool isGrounded = true;
 
@@ -49,6 +53,6 @@ public class PlayerMovement : MonoBehaviour
     public void AddScore()
     {
         score++;
-        Debug.Log("Score: " + score);
+        scoreText.text = "Score: " + score;
     }
 }
