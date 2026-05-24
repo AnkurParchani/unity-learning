@@ -4,9 +4,14 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform player;
 
-    void Update()
-    {
-        transform.position = player.position + new Vector3(0, 2, -6);
-    }
+    Vector3 offset = new Vector3(0, 2, -6);
 
+    void LateUpdate()
+    {
+        transform.position = Vector3.Lerp(
+            transform.position,
+            player.position + offset,
+            5f * Time.deltaTime
+        );
+    }
 }
