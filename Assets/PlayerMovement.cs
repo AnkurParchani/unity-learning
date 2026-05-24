@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded = true;
 
+    int score = 0;
+
     Rigidbody rb;
 
     void Start()
@@ -42,5 +44,11 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+
+    public void AddScore()
+    {
+        score++;
+        Debug.Log("Score: " + score);
     }
 }

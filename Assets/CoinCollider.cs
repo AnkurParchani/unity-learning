@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class CoinCollider : MonoBehaviour
 {
-    int score = 0;
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Coin")
+        if (other.CompareTag("Player"))
         {
-            score++;
-            Debug.Log("Score: " + score);
-            Destroy(other.gameObject);
+            PlayerMovement player =
+                other.GetComponent<PlayerMovement>();
+
+            player.AddScore();
+
+            Destroy(gameObject);
         }
     }
 }
