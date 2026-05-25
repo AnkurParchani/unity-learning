@@ -17,12 +17,12 @@ public class ObstacleMovement : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
 
-        if (transform.position.x > 3)
+        if (transform.position.x >= 3)
         {
             movingRight = false;
         }
 
-        if (transform.position.x < -3)
+        if (transform.position.x <= -3)
         {
             movingRight = true;
         }
