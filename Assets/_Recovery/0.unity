@@ -681,7 +681,6 @@ GameObject:
   - component: {fileID: 514946784}
   - component: {fileID: 514946783}
   - component: {fileID: 514946782}
-  - component: {fileID: 514946786}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Obstacle
@@ -782,19 +781,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &514946786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514946781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec67e59bd93aa459eb5956a52d7a40dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObstacleMovement
-  speed: 2
 --- !u!1 &568420165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1033,6 @@ GameObject:
   - component: {fileID: 826851150}
   - component: {fileID: 826851149}
   - component: {fileID: 826851148}
-  - component: {fileID: 826851152}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -1148,19 +1133,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &826851152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826851147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec67e59bd93aa459eb5956a52d7a40dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObstacleMovement
-  speed: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1739,6 @@ GameObject:
   - component: {fileID: 2005014955}
   - component: {fileID: 2005014954}
   - component: {fileID: 2005014953}
-  - component: {fileID: 2005014957}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: Obstacle
@@ -1868,19 +1839,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2005014957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005014952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec67e59bd93aa459eb5956a52d7a40dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObstacleMovement
-  speed: 2
 --- !u!1 &2029067608
 GameObject:
   m_ObjectHideFlags: 0
