@@ -8,7 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 7f;
 
+    int lives = 3;
+
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI livesText;
 
     bool isGrounded = true;
 
@@ -42,7 +45,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            SceneManager.LoadScene(0);
+            lives--;
+            livesText.text = "Lives: " + lives;
+
+            if (lives <= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
+
         }
 
         if (collision.gameObject.CompareTag("Ground"))
