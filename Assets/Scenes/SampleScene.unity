@@ -1051,6 +1051,7 @@ GameObject:
   - component: {fileID: 826851149}
   - component: {fileID: 826851148}
   - component: {fileID: 826851152}
+  - component: {fileID: 826851153}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -1158,12 +1159,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826851147}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec67e59bd93aa459eb5956a52d7a40dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleMovement
   speed: 2
+--- !u!114 &826851153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826851147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26febefbefa24348a9f4d6f99667d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyRotate
+  rotationSpeed: 100
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
