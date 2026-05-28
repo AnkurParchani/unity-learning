@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826851147}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec67e59bd93aa459eb5956a52d7a40dc, type: 3}
   m_Name: 
@@ -1174,7 +1174,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 826851147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b26febefbefa24348a9f4d6f99667d5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 20b6a0a99da9e4bcfa533eb1ecfe13a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyRotate
   rotationSpeed: 100

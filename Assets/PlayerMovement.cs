@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI livesText;
+    public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI winText;
+
 
     bool isGrounded = true;
 
@@ -50,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (lives <= 0)
             {
-                SceneManager.LoadScene(0);
+                gameOverText.gameObject.SetActive(true);
             }
 
         }
@@ -69,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         if (score >= totalCoins)
         {
             Debug.Log("You win!");
+            winText.gameObject.SetActive(true);
         }
     }
 }
