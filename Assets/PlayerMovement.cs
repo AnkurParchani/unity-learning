@@ -35,12 +35,20 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movement = new Vector3(x, 0, z);
 
+        // Move the player
         transform.Translate(movement * speed * Time.deltaTime);
 
+        // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+        }
+
+        // Restart the game
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
