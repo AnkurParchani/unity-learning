@@ -72,6 +72,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("JumpPad"))
+        {
+            rb.AddForce(Vector3.up * 15f, ForceMode.Impulse);
+        }
+    }
+
     public void AddScore()
     {
         score++;
